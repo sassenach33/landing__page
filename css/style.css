@@ -1,0 +1,98 @@
+/* 
+======================
+estilização Global 
+======================
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;  /* Altera o tipo de fonte presente no documento */
+    background-color: #f7f7f7;
+    display: grid;
+    justify-items: center;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+p {
+    font-size: 20px;   /* Alterando o tamanho dos parágrafos de 16px para 20px */
+}
+
+a {
+    text-decoration: none; /* Tira qualquer decoração que tenha na tag a  */
+}
+
+img {
+    max-width: 100%; /* Evita o overflow, a img ocupa 100% do elemento pai */
+}
+
+li {
+    list-style: none;
+}
+
+/* 
+======================
+estilização do header 
+======================
+*/
+
+.menu {
+    display: flex; /* Alinha os itens na horizontal */
+    gap: 20px;  /* Cria um distanciamento entre os itens */
+}
+
+.menu a {
+    background-color: #ffffff;
+    padding: 15px 30px; /* Espaçamento interno, quando utilizamos o atalho padding com dois valores, o primeiro valor para cima/baixo e o segundo valor para direita/esquerda */
+    border-radius: 4px; /* Arrendonda as laterais da borda */
+    color: #000000;
+    text-transform: uppercase; /* Deixa o texto com letras maiúsculas */
+}
+
+.menu a:hover {
+    background-color: #ee2211;
+    color: #ffffff;
+}
+
+/* 
+======================
+Estilização do Conteúdo 
+======================
+*/
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+}
+.introducao{
+    background-color: white;
+    padding: 40px;
+    text-align: right;
+    display: grid;
+    align-content: center;
+    justify-items: end;
+}
+
+.subtitulo{
+    font-size: 64px;
+    text-transform: uppercase;
+    padding: 40px;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: end;
+    align-content: center;
+}
+
+.botao {
+    background-color: #ee2211;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.rodape {
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    width: 100%; /* Faz com que o elemento atual fique 100% do tamanho do elemento pai (Você não está utilizando o display.) */
+}
